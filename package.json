@@ -1,0 +1,34 @@
+{
+  "name": "rotombits",
+  "version": "1.0.0",
+  "description": "Rotom-specific Experiments using BotsBits",
+  "main": "bin/cli.js",
+  "scripts": {
+    "test": "jasmine-node --color --verbose --junitreport --captureExceptions --forceexit --test-dir test/unit",
+    "cover": "istanbul cover --include-all-sources jasmine-node --color --verbose --junitreport --captureExceptions --forceexit --test-dir test/unit",
+    "lint": "eslint lib test/unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DidjaRedo/RotomBits.git"
+  },
+  "author": "Erik Fortune",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DidjaRedo/RotomBits/issues"
+  },
+  "homepage": "https://github.com/DidjaRedo/RotomBits#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "istanbul": "^0.4.5",
+    "jasmine-node": "^1.14.5"
+  },
+  "dependencies": {
+    "botsbits": "git+https://github.com/DidjaRedo/BotsBits.git"
+  }
+}
