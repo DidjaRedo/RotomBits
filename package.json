@@ -4,8 +4,9 @@
   "description": "Rotom-specific Experiments using BotsBits",
   "main": "bin/cli.js",
   "scripts": {
-    "test": "jasmine-node --color --verbose --junitreport --captureExceptions --forceexit --test-dir test/unit",
-    "cover": "istanbul cover --include-all-sources jasmine-node --color --verbose --junitreport --captureExceptions --forceexit --test-dir test/unit",
+    "testjn": "jasmine-node --color --verbose --junitreport --captureExceptions --forceexit --test-dir test/unit",
+    "test": "jasmine --config=test/support/jasmine.json",
+    "cover": "istanbul cover --include-all-sources jasmine -- --config=test/support/jasmine.json",
     "lint": "eslint lib test/unit"
   },
   "repository": {
@@ -26,7 +27,7 @@
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-standard": "^3.1.0",
     "istanbul": "^0.4.5",
-    "jasmine-node": "^1.14.5"
+    "jasmine": "^3.1.0"
   },
   "dependencies": {
     "botsbits": "git+https://github.com/DidjaRedo/BotsBits.git"
